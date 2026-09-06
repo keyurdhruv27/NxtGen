@@ -1,0 +1,1 @@
+NxtGen Dentistry 2026 website — v35. Fixed mobile Scientific Program header overlap, superscript date positioning, and missing spacing in day headings.
