@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NxtGen Dentistry 2026 | Ahmedabad</title>
+<meta name="description" content="NxtGen Dentistry 2026 — A Conference for the Next Generation. 8–9 December 2026, Ahmedabad, Gujarat.">
+<style>
+:root{
+  --navy:#06225d;
+  --navy2:#001a4d;
+  --blue:#0876a8;
+  --cyan:#0da4c5;
+  --sky:#eaf7ff;
+  --ink:#092354;
+  --white:#fff;
+  --line:#d8e9f4;
+  --shadow:0 18px 50px rgba(0,35,90,.12);
+  --radius:22px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+a{text-decoration:none;color:inherit}
+.container{width:min(1180px,92%);margin:auto}
+
+/* NAV */
+.nav{
+  position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);
+  backdrop-filter:blur(12px);border-bottom:1px solid #e6eef5;
+}
+.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.logo{font-weight:900;line-height:.8;font-size:25px;letter-spacing:-1.5px;color:var(--navy)}
+.logo span{display:block;font-size:10px;letter-spacing:5px;color:var(--blue);margin-top:7px}
+.links{display:flex;align-items:center;gap:24px;font-size:13px;font-weight:700}
+.links a{padding:9px 0;position:relative}
+.links a:hover{color:var(--blue)}
+.register{background:var(--navy);color:white!important;padding:12px 20px!important;border-radius:25px;box-shadow:0 7px 20px rgba(6,34,93,.2)}
+.menu{display:none;border:0;background:none;font-size:26px;color:var(--navy)}
+
+/* HERO */
+.hero img{display:block;width:100%;height:auto}
+.hero picture img{max-height:calc(100vh - 76px);object-fit:cover;object-position:center}
+.hero{background:#eaf7ff}
+
+/* COUNTDOWN */
+.countdown-wrap{background:linear-gradient(135deg,#001c50,#063b82);color:#fff;padding:24px 0}
+.count-row{display:flex;align-items:center;justify-content:center;gap:38px}
+.count-title{font-size:13px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;white-space:nowrap}
+.timer{display:flex;gap:12px}
+.time-box{min-width:92px;text-align:center;border:1px solid rgba(255,255,255,.55);border-radius:9px;padding:11px 8px;background:rgba(255,255,255,.05)}
+.time-box strong{display:block;font-size:30px;line-height:1}
+.time-box span{font-size:11px;text-transform:uppercase;letter-spacing:1px;opacity:.85}
+.count-actions{display:flex;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 24px;border-radius:8px;font-weight:800;font-size:14px;border:1px solid rgba(255,255,255,.6)}
+.btn.primary{background:linear-gradient(90deg,#0aa4c8,#1472bd);border:0;color:#fff}
+.btn.light{color:#fff}
+
+/* FEATURES */
+.features{background:#fff;color:#fff;padding:18px 0 10px;border-bottom:1px solid #dbeaf3}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.feature{display:flex;align-items:center;justify-content:center;gap:13px;padding:10px 15px;border-right:1px solid rgba(255,255,255,.35);text-align:left}
+.feature:last-child{border:0}
+.icon-circle{width:50px;height:50px;border:2px solid #08a2c9;border-radius:50%;display:grid;place-items:center;font-size:22px;flex:none}
+.feature b{font-size:13px;line-height:1.35}
+
+
+.pillar-art{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:hidden;
+}
+.pillar-art img{
+  display:block;
+  width:100%;
+  max-width:1320px;
+  height:auto;
+  object-fit:contain;
+}
+
+
+.why-attend{
+  background:linear-gradient(180deg,#f7fcff 0%,#fff 100%);
+  padding:72px 0 78px;
+}
+.why-head{margin-bottom:34px}
+.why-tagline{font-weight:900;letter-spacing:1.5px;color:var(--navy);font-size:15px}
+.why-head h2{font-size:clamp(19px, calc(19px + 1.05vw), 34px);line-height:1.15;white-space:nowrap;letter-spacing:-.2px}
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.why-card{
+  position:relative;
+  background:#fff;
+  border:1px solid #d8e9f4;
+  border-radius:22px;
+  padding:30px 20px 27px;
+  text-align:center;
+  min-height:265px;
+  box-shadow:0 12px 34px rgba(0,45,90,.07);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.why-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 20px 42px rgba(0,45,90,.13);
+}
+.why-icon{
+  width:100%;
+  height:auto;
+  aspect-ratio:3 / 2;
+  margin:0 auto 14px;
+  display:block;
+  object-fit:contain;
+  object-position:center;
+  border-radius:12px;
+  background:transparent;
+}
+.why-card h3{
+  margin:0 0 10px;
+  color:var(--navy);
+  font-size:15px;
+  line-height:1.25;
+  letter-spacing:.5px;
+}
+.why-card p{
+  margin:0;
+  color:#6a8197;
+  font-size:12px;
+  line-height:1.55;
+}
+
+
+.about-card{
+  text-align:center;
+}
+.about-card-title,
+.about-card-desc{
+  text-align:center;
+}
+.about-card .stats{
+  text-align:center;
+}
+.about-card .stat{
+  text-align:center;
+}
+.about-card .stat strong,
+.about-card .stat small{
+  display:block;
+  text-align:center;
+}
+
+/* SECTIONS */
+section{padding:78px 0}
+.kicker{font-size:13px;letter-spacing:2px;font-weight:900;color:var(--blue);text-transform:uppercase}
+h2{font-size:38px;line-height:1.05;margin:8px 0 18px;color:var(--navy)}
+h2 span{color:var(--blue)}
+.lead{font-size:17px;line-height:1.7;color:#385172}
+.about{background:linear-gradient(180deg,#fff,#f4fbff)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.about-card{background:linear-gradient(145deg,#06255e,#0b5b92);color:#fff;border-radius:28px;padding:45px;box-shadow:var(--shadow);min-height:320px;display:flex;flex-direction:column;justify-content:center}
+.about-card h3{font-size:clamp(22px, 2.15vw, 30px);line-height:1.12;margin:0 0 12px;white-space:nowrap;letter-spacing:clamp(-0.4px, -0.02vw, 0px)}
+.about-card p{line-height:1.7;color:#e4f6ff}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:22px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 8px 25px rgba(0,40,80,.05)}
+.stat strong{display:block;font-size:24px;color:var(--blue)}
+.stat small{color:#52708d}
+
+/* HIGHLIGHTS */
+.highlights{background:#fff}
+.section-head{text-align:center;margin-bottom:38px}
+.highlight-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid var(--line);border-radius:18px;padding:28px 18px;text-align:center;background:#fff;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.card .big-icon{font-size:34px;margin-bottom:15px}
+.card h3{font-size:16px;margin:0 0 8px}
+.card p{font-size:13px;color:#68809a;line-height:1.5;margin:0}
+
+/* SPEAKERS */
+.dark-section{background:linear-gradient(135deg,#001b4f,#073e7e);color:#fff}
+.dark-section h2{color:#fff}
+.speaker-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.speaker{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:24px;padding:28px 20px 30px;text-align:center}
+.speaker-photo{
+  width:210px;height:210px;border-radius:50%;margin:0 auto 18px;
+  background:#fff;border:5px solid rgba(255,255,255,.9);
+  box-shadow:0 10px 30px rgba(0,0,0,.18);overflow:hidden;
+}
+.speaker-photo img{
+  width:100%;height:100%;display:block;object-fit:cover;object-position:center center;transform:scale(1.04);
+}
+.speaker h3{margin:5px 0;font-size:17px}
+.speaker p{margin:0;color:#c8e8f7;font-size:12px;line-height:1.5}
+.notice{margin-top:24px;text-align:center;color:#b9d8eb;font-size:13px}
+
+/* TRACKS + DATES */
+.tracks{background:#f4faff}
+.track-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.track{background:#fff;border:1px solid var(--line);padding:22px;border-radius:15px;text-align:center;font-weight:800;font-size:14px}
+.schedule-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:35px;margin-top:55px}
+.timeline{border-left:3px solid #0b8eb7;padding-left:28px}
+.timeline-item{position:relative;margin-bottom:25px}
+.timeline-item:before{content:"";position:absolute;left:-38px;top:4px;width:12px;height:12px;border-radius:50%;background:#0b8eb7;border:4px solid #d9f5ff}
+.timeline-item b{display:block;margin-bottom:5px}
+.timeline-item span{font-size:13px;color:#66809a}
+.fee-card{background:#fff;border-radius:18px;border:1px solid var(--line);overflow:hidden;box-shadow:0 10px 35px rgba(0,40,80,.07)}
+.fee-card .fee-head{padding:18px 22px;background:#e3f6ff;font-weight:900}
+.fee-body{padding:22px;color:#55708a;line-height:1.7}
+
+/* VENUE */
+.venue{background:linear-gradient(180deg,#eef9ff,#fff)}
+.venue-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.map-placeholder{min-height:310px;border-radius:25px;background:linear-gradient(145deg,#dff4ff,#b9dff0);display:grid;place-items:center;border:1px solid #b6d8e8;box-shadow:var(--shadow);font-weight:900;color:var(--navy);text-align:center;padding:30px}
+
+/* CTA */
+.final-cta{padding:55px 0;background:linear-gradient(90deg,#0b75a7,#05265f);color:#fff;text-align:center}
+.final-cta h2{color:#fff;margin-bottom:10px}
+.final-cta p{color:#d8f1ff;margin-bottom:25px}
+
+/* FOOTER */
+footer{background:#031d50;color:#fff;padding:50px 0 20px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:35px}
+footer h4{margin:0 0 14px}
+footer p,footer a{font-size:13px;color:#bfd7e8;line-height:1.8}
+.footer-logo{font-size:29px;font-weight:900}
+.bottom{border-top:1px solid rgba(255,255,255,.2);margin-top:35px;padding-top:18px;display:flex;justify-content:space-between;font-size:12px;color:#9ebbd0}
+
+/* RESPONSIVE */
+
+@media(max-width:1050px){
+  .why-grid{grid-template-columns:repeat(2,1fr);max-width:760px;margin:auto}
+}
+
+@media(max-width:1050px){
+  .links{gap:13px;font-size:12px}
+  .about-grid,.venue-grid,.schedule-grid{grid-template-columns:1fr}
+  .highlight-grid,.speaker-grid{grid-template-columns:repeat(2,1fr)}
+  .track-grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:600px){
+  .why-attend{padding:52px 0 58px}
+  .why-head h2{font-size:clamp(19px, calc(19px + 1.05vw), 34px);}
+  .why-grid{grid-template-columns:repeat(2,1fr);gap:12px}
+  .why-card{min-height:240px;padding:20px 10px 20px;border-radius:17px}
+  .why-icon{width:100%;height:auto;aspect-ratio:3 / 2;margin-bottom:12px;border-radius:10px}
+  .why-card h3{font-size:12px}
+  .why-card p{font-size:10px;line-height:1.4}
+}
+
+@media(max-width:760px){
+  .speaker-photo{width:165px;height:165px;}
+
+  .pillar-art img{width:125%;max-width:none;margin-left:-12.5%;}
+
+  .nav-inner{height:64px}
+  .links{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;padding:16px 5%;box-shadow:0 12px 25px rgba(0,0,0,.08);flex-direction:column;align-items:flex-start}
+  .links.open{display:flex}
+  .menu{display:block}
+  .register{display:none}
+  .count-row{flex-direction:column;gap:18px}
+  .timer{width:100%;justify-content:center;gap:7px}
+  .time-box{min-width:70px;padding:9px 5px}
+  .time-box strong{font-size:23px}
+  .count-actions{width:100%;justify-content:center}
+  .btn{padding:12px 17px}
+  section{padding:55px 0}
+  h2{font-size:30px}
+  .feature-grid{grid-template-columns:repeat(2,1fr)}
+  .feature{border-bottom:1px solid rgba(255,255,255,.25)}
+  .highlight-grid,.speaker-grid{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .bottom{flex-direction:column;gap:8px}
+}
+@media(max-width:480px){
+  .timer{gap:5px}
+  .time-box{min-width:62px}
+  .time-box strong{font-size:20px}
+  .time-box span{font-size:9px}
+  .feature-grid,.highlight-grid,.speaker-grid,.track-grid,.footer-grid{grid-template-columns:1fr}
+  .feature{justify-content:flex-start;border-right:0}
+  .count-actions{flex-direction:column}
+  .btn{width:100%}
+}
+
+    .about-justify{text-align:justify;}
+
+    /* Fluid mobile typography: scales with device width instead of using one tiny fixed size */
+    @media(max-width:760px){
+      .why-title{
+        white-space:nowrap;
+        font-size:clamp(18px, 5.7vw, 27px);
+        letter-spacing:clamp(-.55px, -.08vw, 0px);
+        line-height:1.12;
+      }
+      .student-forum-line{
+        white-space:nowrap;
+        font-size:clamp(11px, 3.25vw, 16px);
+        letter-spacing:clamp(-.25px, -.04vw, 0px);
+      }
+      .organizer-line b{
+        white-space:nowrap;
+        font-size:clamp(11px, 3.25vw, 16px);
+        letter-spacing:clamp(-.25px, -.04vw, 0px);
+      }
+    }
+
+    /* Exact user-supplied Why Attend artwork: preserve the original 3:2 ratio and never crop. */
+    .why-icon{
+      object-fit:contain;
+      object-position:center;
+    }
+    @media(min-width:1051px){
+      .why-card{padding:24px 16px 27px;}
+      .why-icon{width:calc(100% + 12px);margin-left:-6px;}
+    }
+    @media(max-width:1050px) and (min-width:601px){
+      .why-card{padding:24px 18px 27px;}
+      .why-icon{width:calc(100% + 10px);margin-left:-5px;}
+    }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="logo">NxtGen<span>DENTISTRY</span></a>
+    <button class="menu" aria-label="Open menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+    <nav class="links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#speakers">Speakers</a>
+      <a href="#program">Scientific Program</a>
+      <a href="#workshops">Workshops</a>
+      <a href="#registration">Registration</a>
+      <a href="#abstracts">Abstracts</a>
+      <a href="#venue">Venue</a>
+      <a href="#contact">Contact</a>
+      <a class="register" href="#registration">Register Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/banner-mobile.png">
+    <source media="(max-width: 1100px)" srcset="assets/banner-tablet.png">
+    <img src="assets/banner-desktop.png" alt="NxtGen Dentistry 2026 conference banner">
+  </picture>
+</section>
+
+<section class="countdown-wrap">
+  <div class="container count-row">
+    <div class="count-title">Conference begins in</div>
+    <div class="timer" id="timer">
+      <div class="time-box"><strong id="days">--</strong><span>Days</span></div>
+      <div class="time-box"><strong id="hours">--</strong><span>Hours</span></div>
+      <div class="time-box"><strong id="minutes">--</strong><span>Minutes</span></div>
+      <div class="time-box"><strong id="seconds">--</strong><span>Seconds</span></div>
+    </div>
+    <div class="count-actions">
+      <a class="btn primary" href="#registration">Register Now →</a>
+      <a class="btn light" href="#abstracts">Submit Abstract →</a>
+    </div>
+  </div>
+</section>
+
+<section class="features why-attend" id="why-attend">
+  <div class="container">
+    <div class="section-head why-head">
+      <h2 class="why-title">WHY ATTEND <span>NxtGen Dentistry?</span></h2>
+      <p class="lead why-tagline">LEARN - CONNECT - LEAD</p>
+    </div>
+    <div class="why-grid">
+      <article class="why-card">
+        <img class="why-icon" src="assets/why-innovative-learning.png" alt="Innovative learning dental illustration">
+        <h3>INNOVATIVE<br>LEARNING</h3>
+        <p>Discover new ideas, techniques and perspectives shaping modern dentistry.</p>
+      </article>
+      <article class="why-card">
+        <img class="why-icon" src="assets/why-expert-speakers.png" alt="Expert speakers dental conference illustration">
+        <h3>EXPERT<br>SPEAKERS</h3>
+        <p>Learn directly from distinguished experts and thought leaders.</p>
+      </article>
+      <article class="why-card">
+        <img class="why-icon" src="assets/why-hands-on-workshops.png" alt="Hands-on dental workshop illustration">
+        <h3>HANDS-ON<br>WORKSHOPS</h3>
+        <p>Turn knowledge into practical skills through focused hands-on learning.</p>
+      </article>
+      <article class="why-card">
+        <img class="why-icon" src="assets/why-networking.png" alt="Networking opportunities dental conference illustration">
+        <h3>NETWORKING<br>OPPORTUNITIES</h3>
+        <p>Build meaningful connections with peers, mentors and dental professionals.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div>
+      <div class="kicker">About the Forum</div>
+      <h2>NxtGen <span>Dentistry 2026</span></h2>
+      <p class="lead student-forum-line"><b>A Student Forum (UG & PG) To Learn & Connect</b></p>
+      <p class="lead about-justify organizer-line"><span>Organized by:</span><br><b class="department-line">Department of Pedodontics and Preventive Dentistry</b><br><b>Ahmedabad Dental College and Hospital</b></p>
+      <p class="lead about-justify">A focused two-day academic experience bringing students together with leading dental educators for scientific learning, clinical insights, paper and e-poster presentations, and a hands-on endodontic workshop.</p>
+      <a class="btn" style="background:var(--navy);color:#fff;border:0" href="#program">View Scientific Program →</a>
+    </div>
+    <div>
+      <div class="about-card">
+        <h3 class="about-card-title">LEARN - CONNECT - LEAD</h3>
+        <p class="about-card-desc">Two days of scientific sessions, practical learning and professional interaction.</p>
+        <div class="stats">
+          <div class="stat"><strong>8th - 9th</strong><small>December 2026</small></div>
+          <div class="stat"><strong>6 CDE</strong><small>Points</small></div>
+          <div class="stat"><strong>UG & PG</strong><small>Student Forum</small></div>
+          <div class="stat"><strong>2 Days</strong><small>Academic + Workshop</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="highlights" id="program">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">8 December 2026</div>
+      <h2>Day 1 <span>Scientific Program</span></h2>
+      <p class="lead">J.B. Auditorium, AMA</p>
+    </div>
+    <div class="highlight-grid">
+      <div class="card"><div class="big-icon">01</div><h3>Build. Brand. Grow</h3><p><b>Dr. Sandesh Mayekar</b><br>Founder, Indian Academy of Aesthetic & Cosmetic Dentistry</p></div>
+      <div class="card"><div class="big-icon">02</div><h3>Rotary Endodontics in Primary Teeth</h3><p><b>Dr. Ganesh Jeevanandan</b><br>Saveetha Dental College & Hospitals, Chennai</p></div>
+      <div class="card"><div class="big-icon">03</div><h3>Rotary Endodontics in Permanent Teeth</h3><p><b>Dr. Pradeep S.</b><br>Saveetha Dental College & Hospitals, Chennai</p></div>
+      <div class="card"><div class="big-icon">04</div><h3>Healthcare 2.0: The AI Revolution</h3><p><b>Dr. Rama Moondra</b><br>Adani Institute of Digital Technology Management</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="speakers">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker" style="color:#55c8e7">Meet the Experts</div>
+      <h2>Our <span>Speakers</span></h2>
+      <p style="color:#c8e8f7">Learn from distinguished experts across dentistry, endodontics and healthcare innovation.</p>
+    </div>
+    <div class="speaker-grid">
+      <article class="speaker">
+        <div class="speaker-photo"><img src="assets/speaker-sandesh.png" alt="Dr. Sandesh Mayekar"></div>
+        <h3>Dr. Sandesh Mayekar</h3>
+        <p>Father of Modern Dentistry in India<br>Founder, Indian Academy of Aesthetic &amp; Cosmetic Dentistry<br>Consultant for Miss India Smiles for over 30 years</p>
+      </article>
+      <article class="speaker">
+        <div class="speaker-photo"><img src="assets/speaker-ganesh.png" alt="Dr. Ganesh Jeevanandan"></div>
+        <h3>Dr. Ganesh Jeevanandan</h3>
+        <p>Professor, Department of Pediatric &amp; Preventive Dentistry<br>Saveetha Dental College &amp; Hospitals, Chennai<br>Founder, KEDO Dental • Inventor of Kedo-S rotary files</p>
+      </article>
+      <article class="speaker">
+        <div class="speaker-photo"><img src="assets/speaker-pradeep.png" alt="Dr. Pradeep S."></div>
+        <h3>Dr. Pradeep S.</h3>
+        <p>Professor, Department of Conservative &amp; Endodontics<br>Saveetha Dental College &amp; Hospitals, Chennai</p>
+      </article>
+      <article class="speaker">
+        <div class="speaker-photo"><img src="assets/speaker-rama.png" alt="Dr. Rama Moondra"></div>
+        <h3>Dr. Rama Moondra</h3>
+        <p>Dean<br>Adani Institute of Digital Technology Management</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="tracks" id="registration">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">9 December 2026</div>
+      <h2>Hands-On <span>Workshop</span></h2>
+      <p class="lead">From Access to Apex — Rotary Endodontics in Primary and Permanent Teeth</p>
+      <p class="lead"><b>By Dr. Ganesh Jeevanandan & Dr. Pradeep S.</b></p>
+    </div>
+    <div class="schedule-grid">
+      <div>
+        <div class="kicker">Day 2</div>
+        <h2 style="font-size:30px">Workshop <span>Details</span></h2>
+        <div class="timeline">
+          <div class="timeline-item"><b>9 December 2026</b><span>Hands-on workshop</span></div>
+          <div class="timeline-item"><b>₹1,500 per person</b><span>Workshop registration</span></div>
+          <div class="timeline-item"><b>Breakfast + Lunch</b><span>Included for workshop participants</span></div>
+          <div class="timeline-item"><b>FREE Material Worth ₹4,000</b><span>For workshop participants only</span></div>
+        </div>
+      </div>
+      <div class="fee-card">
+        <div class="fee-head">Conference Registration</div>
+        <div class="fee-body">
+          <p><b>₹999 per person</b> — Group of 5</p>
+          <p><b>₹1,199 per person</b> — Individual</p>
+          <p>Conference registration includes <b>Breakfast, Lunch & High Tea (Day 1)</b>.</p>
+          <a class="btn" style="background:var(--navy);color:#fff;border:0" href="#contact">Register / Enquire →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="abstracts">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Scientific Presentations</div>
+      <h2>Share Your <span>Ideas</span></h2>
+      <p class="lead">Be a part of NxtGen Dentistry 2026 by sharing your ideas through <b>Papers and E-Posters</b>.</p>
+      <a class="btn" style="background:var(--navy);color:#fff;border:0" href="#contact">Enquire About Submission →</a>
+    </div>
+  </div>
+</section>
+
+<section class="venue" id="venue">
+  <div class="container venue-grid">
+    <div>
+      <div class="kicker">Venue</div>
+      <h2>Two Days. <span>Two Venues.</span></h2>
+      <p class="lead"><b>Day 1 — J.B. Auditorium, AMA</b></p>
+      <p class="lead"><b>Day 2 — Ahmedabad Dental College & Hospital</b></p>
+      <p class="lead">Ahmedabad, Gujarat</p>
+      <a class="btn" style="background:var(--navy);color:#fff;border:0" href="#contact">Get Venue Details →</a>
+    </div>
+    <div class="map-placeholder">📍<br><br><b>Day 1</b><br>J.B. Auditorium, AMA<br><br><b>Day 2</b><br>Ahmedabad Dental College & Hospital<br>Ahmedabad, Gujarat</div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <h2>Be Part of the Next Generation</h2>
+    <p>Learn. Connect. Lead.</p>
+    <a class="btn primary" href="#registration">Register for NxtGen Dentistry →</a>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div><div class="footer-logo">NxtGen</div><p>DENTISTRY</p><p>A Conference for the Next Generation</p></div>
+      <div><h4>Quick Links</h4><p><a href="#about">About</a><br><a href="#speakers">Speakers</a><br><a href="#program">Scientific Program</a><br><a href="#registration">Registration</a></p></div>
+      <div><h4>Participate</h4><p><a href="#workshops">Workshops</a><br><a href="#abstracts">Papers & E-Posters</a><br><a href="#venue">Venue</a><br><a href="#contact">Contact</a></p></div>
+      <div><h4>Conference</h4><p>8–9 December 2026<br>Day 1: J.B. Auditorium, AMA<br>Day 2: Ahmedabad Dental College & Hospital</p><p><b>Organizing Chairperson</b><br>Dr. Vasudha Sodani<br>Professor & Head, Department of Pedodontics, ADCH</p><p>www.nxtgendentistry.com</p><p>Instagram: @nxtgen_dentistry<br>Queries: 8320554036 — Dr. Parth Chhabria</p></div>
+    </div>
+    <div class="bottom"><span>© 2026 NxtGen Dentistry. All rights reserved.</span><span>Innovate &nbsp;|&nbsp; Inspire &nbsp;|&nbsp; Transform</span></div>
+  </div>
+</footer>
+
+<script>
+/* Countdown: conference date, 8 Dec 2026 at 00:00 local time.
+   Change the time below when the official inaugural/session time is available. */
+const target = new Date("2026-12-08T00:00:00"); // 8 December 2026 — conference start
+function updateTimer(){
+  const now = new Date();
+  let diff = target - now;
+  if(diff < 0) diff = 0;
+  const d = Math.floor(diff/86400000);
+  const h = Math.floor((diff%86400000)/3600000);
+  const m = Math.floor((diff%3600000)/60000);
+  const s = Math.floor((diff%60000)/1000);
+  document.getElementById("days").textContent = String(d).padStart(2,"0");
+  document.getElementById("hours").textContent = String(h).padStart(2,"0");
+  document.getElementById("minutes").textContent = String(m).padStart(2,"0");
+  document.getElementById("seconds").textContent = String(s).padStart(2,"0");
+}
+updateTimer();
+setInterval(updateTimer,1000);
+</script>
+</body>
+</html>
